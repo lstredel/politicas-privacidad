@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — TaxiCalc</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d0d0d;
+      color: #e0e0e0;
+      line-height: 1.7;
+      padding: 24px 16px 64px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header {
+      border-bottom: 1px solid #1f1f1f;
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .brand {
+      font-size: 22px;
+      font-weight: 900;
+      color: #00E5A0;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .fecha { font-size: 13px; color: #666; }
+    h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #00E5A0;
+      margin: 32px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    p { font-size: 14px; color: #ccc; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 14px; color: #ccc; margin-bottom: 6px; }
+    a { color: #00E5A0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: #111;
+      border-left: 3px solid #00E5A0;
+      padding: 14px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #1f1f1f;
+      font-size: 12px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="brand">TAXICALC</div>
+      <h1>Política de Privacidad</h1>
+      <p class="fecha">Última actualización: 1 de julio de 2026</p>
+    </header>
+
+    <div class="highlight">
+      TaxiCalc es una herramienta independiente para conductores de apps de
+      transporte. No está afiliada, asociada, autorizada ni respaldada por Uber,
+      DiDi, Cabify, InDrive ni ninguna otra plataforma de transporte.
+    </div>
+
+    <h2>1. Quién somos</h2>
+    <p>
+      TaxiCalc es desarrollada y operada por <strong>Asesores PS SpA</strong>
+      (marca PymeSaludable), con domicilio en Santiago de Chile. Para consultas
+      sobre privacidad puedes escribirnos a
+      <a href="mailto:lstredel@gmail.com">lstredel@gmail.com</a>.
+    </p>
+
+    <h2>2. Qué información recopilamos</h2>
+
+    <p><strong>Información de cuenta (Firebase Authentication)</strong></p>
+    <p>
+      Cuando inicias sesión con Google, recibimos tu nombre, dirección de correo
+      electrónico y foto de perfil de tu cuenta de Google. Esta información se
+      usa únicamente para identificar tu sesión dentro de la app.
+    </p>
+
+    <p><strong>Datos de uso de la app</strong></p>
+    <p>
+      TaxiCalc almacena localmente en tu dispositivo los datos que ingresas o
+      que la app captura automáticamente:
+    </p>
+    <ul>
+      <li>Tarifas, kilómetros y minutos de los viajes analizados</li>
+      <li>Configuración de metas de ingreso, costos de vehículo y parámetros
+          personales que tú defines</li>
+      <li>Historial de viajes aceptados y rechazados</li>
+    </ul>
+    <p>
+      Estos datos se guardan en la base de datos local del dispositivo (SQLite)
+      y no se transmiten a servidores externos, salvo que en el futuro
+      habilites funciones de respaldo en la nube (lo cual se indicará
+      explícitamente).
+    </p>
+
+    <p><strong>Captura de pantalla (MediaProjection)</strong></p>
+    <div class="highlight">
+      TaxiCalc puede solicitar permiso para capturar la pantalla de tu
+      dispositivo. Este permiso se usa <strong>exclusivamente</strong> para
+      leer el texto visible en tu pantalla cuando una app de transporte
+      (Uber, DiDi, Cabify, InDrive) muestra una oferta de viaje, con el
+      fin de calcular automáticamente la rentabilidad. Las imágenes
+      capturadas se procesan localmente en tu dispositivo mediante
+      reconocimiento óptico de caracteres (OCR) y <strong>nunca se envían
+      a ningún servidor externo</strong>. No almacenamos, transmitimos ni
+      compartimos el contenido de tu pantalla.
+    </div>
+
+    <p><strong>Datos de publicidad (Google AdMob)</strong></p>
+    <p>
+      La versión Basic de TaxiCalc muestra publicidad a través de
+      Google AdMob. AdMob puede recopilar datos del dispositivo para
+      mostrar anuncios relevantes, de acuerdo con la
+      <a href="https://policies.google.com/privacy" target="_blank">
+      Política de Privacidad de Google</a>. Los usuarios del plan Pro
+      no ven publicidad.
+    </p>
+
+    <h2>3. Cómo usamos tu información</h2>
+    <ul>
+      <li>Para identificar tu sesión y asociar tu configuración personal</li>
+      <li>Para calcular la rentabilidad de cada viaje en tiempo real</li>
+      <li>Para mostrarte tu historial y resumen financiero de viajes</li>
+      <li>Para gestionar tu suscripción (plan Basic o Pro)</li>
+      <li>Para enviarte comunicaciones relacionadas con tu cuenta
+          (bienvenida, confirmación de suscripción)</li>
+    </ul>
+
+    <h2>4. Con quién compartimos tu información</h2>
+    <p>
+      No vendemos, arrendamos ni compartimos tu información personal con
+      terceros, excepto en los siguientes casos limitados:
+    </p>
+    <ul>
+      <li><strong>Google Firebase:</strong> autenticación de usuarios y,
+          opcionalmente en el futuro, almacenamiento en la nube</li>
+      <li><strong>Google AdMob:</strong> publicidad en el plan Basic</li>
+      <li><strong>Resend:</strong> envío de correos transaccionales
+          (bienvenida, confirmación de suscripción). Solo recibe tu
+          dirección de correo electrónico</li>
+      <li><strong>Google Play:</strong> gestión de suscripciones y pagos</li>
+      <li><strong>Autoridades:</strong> cuando lo exija la ley aplicable</li>
+    </ul>
+
+    <h2>5. Permisos que solicita la app</h2>
+    <ul>
+      <li><strong>Captura de pantalla (MediaProjection):</strong> para
+          analizar ofertas de viaje automáticamente. Solo activo cuando
+          el conductor lo habilita manualmente.</li>
+      <li><strong>Mostrar sobre otras apps (SYSTEM_ALERT_WINDOW):</strong>
+          para mostrar el overlay de cálculo sobre las apps de transporte.</li>
+      <li><strong>Acceso a notificaciones:</strong> para detectar cuando
+          llega una oferta de viaje y activar el análisis.</li>
+      <li><strong>Internet:</strong> para autenticación con Google y
+          publicidad.</li>
+      <li><strong>Ubicación:</strong> no se solicita ni se usa.</li>
+      <li><strong>Contactos, micrófono, cámara:</strong> no se solicitan
+          ni se usan.</li>
+    </ul>
+
+    <h2>6. Retención de datos</h2>
+    <p>
+      Los datos de historial de viajes se almacenan localmente durante
+      6 meses, tras lo cual se eliminan automáticamente del dispositivo.
+      Puedes eliminar todos tus datos en cualquier momento desinstalando
+      la app o contactándonos para solicitar la eliminación de tu cuenta
+      de Firebase.
+    </p>
+
+    <h2>7. Tus derechos</h2>
+    <p>Tienes derecho a:</p>
+    <ul>
+      <li>Acceder a los datos que tenemos sobre ti</li>
+      <li>Solicitar la corrección de datos inexactos</li>
+      <li>Solicitar la eliminación de tu cuenta y datos asociados</li>
+      <li>Revocar en cualquier momento los permisos otorgados a la app
+          desde la configuración de tu dispositivo</li>
+    </ul>
+    <p>
+      Para ejercer cualquiera de estos derechos, escríbenos a
+      <a href="mailto:lstredel@gmail.com">lstredel@gmail.com</a>.
+    </p>
+
+    <h2>8. Seguridad</h2>
+    <p>
+      Los datos de tu cuenta se protegen mediante los mecanismos de
+      seguridad de Google Firebase. Los datos de viajes se almacenan
+      localmente en tu dispositivo sin transmisión externa. La captura
+      de pantalla se procesa en memoria y nunca se persiste en disco
+      ni se envía a servidores externos.
+    </p>
+
+    <h2>9. Menores de edad</h2>
+    <p>
+      TaxiCalc está dirigida exclusivamente a personas mayores de 18 años
+      que ejercen actividad económica como conductores de plataformas de
+      transporte. No recopilamos intencionalmente datos de menores de edad.
+    </p>
+
+    <h2>10. Cambios a esta política</h2>
+    <p>
+      Podemos actualizar esta política ocasionalmente. Cuando lo hagamos,
+      actualizaremos la fecha al inicio de este documento. Si los cambios
+      son significativos, te notificaremos dentro de la app.
+    </p>
+
+    <h2>11. Contacto</h2>
+    <p>
+      Si tienes preguntas sobre esta política de privacidad, puedes
+      contactarnos en:
+    </p>
+    <ul>
+      <li>Email: <a href="mailto:lstredel@gmail.com">lstredel@gmail.com</a></li>
+      <li>Desarrollador: Asesores PS SpA — Santiago, Chile</li>
+    </ul>
+
+    <footer>
+      © 2026 Asesores PS SpA · TaxiCalc · Santiago, Chile<br>
+      TaxiCalc no está afiliada con Uber, DiDi, Cabify ni InDrive.
+    </footer>
+
+  </div>
+</body>
+</html>
