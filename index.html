@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta name="google-site-verification" content="CB6djI1UVkIPonLwokRTMDE9mrXPYoTXxUm1NqdQqZw" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidad — TaxiCalc</title>
+  <title>TaxiCalc — Política de Privacidad</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -27,21 +26,13 @@
       letter-spacing: 2px;
       margin-bottom: 4px;
     }
-    h1 {
-      font-size: 20px;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 4px;
-    }
-    .fecha { font-size: 13px; color: #666; }
+    h1 { font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 4px; }
     h2 {
-      font-size: 15px;
-      font-weight: 700;
-      color: #00E5A0;
-      margin: 32px 0 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      font-size: 15px; font-weight: 700; color: #00E5A0;
+      margin: 32px 0 10px; text-transform: uppercase; letter-spacing: 1px;
     }
+    h3 { font-size: 14px; font-weight: 700; color: #ffffff; margin: 20px 0 8px; }
+    .fecha { font-size: 13px; color: #666; }
     p { font-size: 14px; color: #ccc; margin-bottom: 12px; }
     ul { padding-left: 20px; margin-bottom: 12px; }
     li { font-size: 14px; color: #ccc; margin-bottom: 6px; }
@@ -56,192 +47,316 @@
       font-size: 14px;
       color: #ccc;
     }
-    footer {
-      margin-top: 48px;
-      padding-top: 24px;
-      border-top: 1px solid #1f1f1f;
-      font-size: 12px;
-      color: #555;
-      text-align: center;
+    .formula {
+      background: #0a1a0a;
+      border: 1px solid #00E5A0;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 12px 0;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      color: #00E5A0;
     }
+    .formula span { color: #aaa; display: block; margin-top: 4px; font-family: inherit; font-size: 12px; }
+    .semaforo { display: flex; gap: 12px; flex-wrap: wrap; margin: 12px 0; }
+    .sem-item { padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; }
+    .verde   { background: #00E5A020; border: 1px solid #00E5A0; color: #00E5A0; }
+    .amarillo{ background: #FFD60020; border: 1px solid #FFD600; color: #FFD600; }
+    .rojo    { background: #CC220020; border: 1px solid #CC2200; color: #CC2200; }
+    footer {
+      margin-top: 48px; padding-top: 24px;
+      border-top: 1px solid #1f1f1f;
+      font-size: 12px; color: #555; text-align: center;
+    }
+    .nav {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-bottom: 32px;
+    }
+    .nav a {
+      font-size: 12px; color: #00E5A0;
+      background: #0a1a12; padding: 6px 12px;
+      border-radius: 12px; border: 1px solid #00E5A060;
+      font-weight: 600;
+    }
+    .nav a:hover { background: #00E5A0; color: #042C53; }
   </style>
 </head>
 <body>
-  <div class="container">
+<div class="container">
 
-    <header>
-      <div class="brand">TAXICALC</div>
-      <h1>Política de Privacidad</h1>
-      <p class="fecha">Última actualización: 1 de julio de 2026</p>
-    </header>
+  <header>
+    <div class="brand">TAXICALC</div>
+    <h1>Política de Privacidad</h1>
+    <p class="fecha">Última actualización: 14 de julio de 2026</p>
+  </header>
+
+  <nav class="nav">
+    <a href="#que-es">¿Qué es TaxiCalc?</a>
+    <a href="#como-calcula">Cómo calcula</a>
+    <a href="#datos">Datos que recopila</a>
+    <a href="#permisos">Permisos</a>
+    <a href="#terceros">Terceros</a>
+    <a href="#derechos">Tus derechos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- ══ QUÉ ES TAXICALC ══ -->
+  <section id="que-es">
+    <h2>¿Qué es TaxiCalc?</h2>
+
+    <p>TaxiCalc te ayuda a decidir, en segundos, si un viaje realmente te conviene
+    aceptar — antes de tocar el botón en tu app de transporte.</p>
 
     <div class="highlight">
-      TaxiCalc es una herramienta independiente para conductores de apps de
-      transporte. No está afiliada, asociada, autorizada ni respaldada por Uber,
-      DiDi, Cabify, InDrive ni ninguna otra plataforma de transporte.
+      TaxiCalc es una herramienta independiente y no está afiliada, asociada,
+      autorizada ni respaldada por Uber, DiDi, Cabify, InDrive ni ninguna otra
+      plataforma de transporte.
     </div>
 
-    <h2>1. Quién somos</h2>
-    <p>
-      TaxiCalc es desarrollada y operada por <strong>Asesores PS SpA</strong>
-      (marca PymeSaludable), con domicilio en Santiago de Chile. Para consultas
-      sobre privacidad puedes escribirnos a
-      <a href="mailto:asesorespymessaludables@gmail.com">asesorespymessaludables@gmail.com</a>.
-    </p>
+    <h3>Cómo funciona</h3>
+    <p>Activa el cálculo automático y TaxiCalc analiza cada oferta que recibes
+    en tu app de transporte. Te muestra de inmediato si el viaje es bueno,
+    aceptable o malo según tus propios números — no estimaciones genéricas.</p>
+
+    <h3>Lo que TaxiCalc calcula por ti</h3>
+    <ul>
+      <li>Rentabilidad real de cada viaje en tiempo real, según tu meta por Km,
+          por Hora, o ambas combinadas (Mixta)</li>
+      <li>Indicador semáforo: viajes buenos, aceptables o malos, de un vistazo</li>
+      <li>Cumplimiento de tu meta diaria por kilómetro y por hora trabajada</li>
+      <li>Costos reales de tu vehículo: bencina, mantención, neumáticos y
+          depreciación — descontados automáticamente de cada viaje</li>
+      <li>Historial completo de viajes aceptados y rechazados</li>
+      <li>Resumen de tus ganancias reales del día y del mes</li>
+    </ul>
+
+    <h3>Para conductores de toda Latinoamérica</h3>
+    <p>TaxiCalc reconoce automáticamente la moneda de tu país y ajusta los
+    cálculos según las retenciones de cada plataforma. Disponible para
+    conductores en Chile, México, Argentina, Colombia, Perú, Ecuador, Guatemala,
+    Costa Rica, Bolivia, Paraguay, República Dominicana, Honduras, El Salvador,
+    Panamá, Uruguay, Brasil y más.</p>
+
+    <h3>Tú decides, no la app</h3>
+    <p>TaxiCalc no acepta ni rechaza viajes por ti. Te da la información clara
+    y al instante para que decidas tú, con tus propios números reales sobre
+    la mesa — no promedios genéricos que no consideran tu vehículo, tu ciudad
+    ni tus costos reales.</p>
+  </section>
+
+  <!-- ══ CÓMO CALCULA ══ -->
+  <section id="como-calcula">
+    <h2>Cómo calcula TaxiCalc</h2>
+    <p>Todos los cálculos se realizan localmente en tu dispositivo, en tiempo
+    real, usando los parámetros que tú configuras en "Mi Auto".</p>
+
+    <!-- Meta por KM -->
+    <h3>Meta por Km</h3>
+    <p>Define cuánto dinero líquido (después de retenciones de la plataforma)
+    quieres ganar por cada kilómetro recorrido en el viaje.</p>
+    <div class="formula">
+      Rentabilidad km = Líquido disponible ÷ Km totales del viaje
+      <span>Ejemplo: $6.000 líquido ÷ 8 km = $750/km</span>
+    </div>
+    <p>Si el resultado es igual o mayor a tu meta configurada → viaje verde.
+    Si está entre el 80% y 100% de tu meta → amarillo. Bajo el 80% → rojo.</p>
+
+    <!-- Meta por Hora -->
+    <h3>Meta por Hora</h3>
+    <p>Define cuánto quieres ganar por hora de trabajo efectivo, incluyendo el
+    tiempo de traslado al pasajero y el tiempo del viaje en sí.</p>
+    <div class="formula">
+      Rentabilidad hora = Líquido disponible ÷ (Minutos totales ÷ 60)
+      <span>Ejemplo: $6.000 líquido ÷ (36 min ÷ 60) = $10.000/hora</span>
+    </div>
+
+    <!-- Meta Mixta -->
+    <h3>Meta Mixta (Km + Hora combinadas)</h3>
+    <p>Evalúa el viaje contra ambas metas simultáneamente. El semáforo refleja
+    el peor resultado entre las dos métricas — si la meta por km es verde pero
+    la de hora es roja, el viaje se muestra en rojo.</p>
+
+    <!-- Líquido disponible -->
+    <h3>Líquido disponible</h3>
+    <p>Es la tarifa del viaje menos las retenciones de la plataforma (comisión,
+    impuestos según el país). Es el dinero real que recibes antes de descontar
+    los costos de tu vehículo.</p>
+    <div class="formula">
+      Líquido = Tarifa − Retención de plataforma
+      <span>Ejemplo Uber Chile: $7.000 − 25% = $5.250 líquido</span>
+    </div>
+
+    <!-- Ganancia final -->
+    <h3>Ganancia final (Utilidad)</h3>
+    <p>Es lo que realmente te queda después de descontar también los costos
+    proporcionales de tu vehículo para ese viaje.</p>
+    <div class="formula">
+      Ganancia = Líquido − Costo Auto del viaje
+      <span>Costo Auto = Bencina + Depreciación + Mantención + Neumáticos (proporcional a los km)</span>
+    </div>
+
+    <!-- Costo Auto -->
+    <h3>Costo de Auto por viaje</h3>
+    <p>TaxiCalc prorratea los costos fijos y variables de tu vehículo por cada
+    kilómetro recorrido, usando los datos que ingresas en "Mi Auto":</p>
+    <ul>
+      <li><strong>Bencina:</strong> precio por litro ÷ rendimiento (km/litro) × km del viaje</li>
+      <li><strong>Depreciación:</strong> (valor del auto ÷ vida útil en km) × km del viaje</li>
+      <li><strong>Neumáticos:</strong> (precio neumáticos ÷ km de duración) × km del viaje</li>
+      <li><strong>Mantención:</strong> (costo mantención ÷ km entre mantenciones) × km del viaje</li>
+    </ul>
+    <div class="formula">
+      Costo Auto = (Bencina/km + Depreciación/km + Neumáticos/km + Mantención/km) × km totales
+    </div>
+
+    <!-- Semáforo -->
+    <h3>Indicador semáforo</h3>
+    <p>Compara la rentabilidad del viaje contra tu meta configurada:</p>
+    <div class="semaforo">
+      <span class="sem-item verde">🟢 Verde — ≥ 100% de tu meta</span>
+      <span class="sem-item amarillo">🟡 Amarillo — entre 80% y 99%</span>
+      <span class="sem-item rojo">🔴 Rojo — menos del 80%</span>
+    </div>
+    <p>Los umbrales de 100% y 80% son configurables desde "Mi Auto" → "Umbrales
+    de color".</p>
+
+    <!-- Desviación -->
+    <h3>Desviación de meta</h3>
+    <p>Muestra cuánto ganaste de más o de menos respecto a tu meta en cada
+    viaje, acumulado en el día y en el mes. Sirve para entender si tu jornada
+    está siendo rentable en términos reales.</p>
+    <div class="formula">
+      Desviación Km = Líquido − (Meta Km × Km totales del viaje)
+      <span>Desviación Hora = Líquido − (Meta Hora ÷ 60 × Minutos totales)</span>
+    </div>
+  </section>
+
+  <!-- ══ DATOS QUE RECOPILA ══ -->
+  <section id="datos">
+    <h2>1. Quiénes somos</h2>
+    <p>TaxiCalc es desarrollada y operada por <strong>Asesores PS SpA</strong>
+    (marca PymeSaludable), con domicilio en Santiago de Chile. Para consultas
+    sobre privacidad puedes escribirnos a
+    <a href="mailto:lstredel@gmail.com">lstredel@gmail.com</a>.</p>
 
     <h2>2. Qué información recopilamos</h2>
 
-    <p><strong>Información de cuenta (Firebase Authentication)</strong></p>
-    <p>
-      Cuando inicias sesión con Google, recibimos tu nombre, dirección de correo
-      electrónico y foto de perfil de tu cuenta de Google. Esta información se
-      usa únicamente para identificar tu sesión dentro de la app.
-    </p>
+    <h3>Información de cuenta (Firebase Authentication)</h3>
+    <p>Cuando inicias sesión con Google, recibimos tu nombre, dirección de
+    correo electrónico y foto de perfil. Esta información se usa únicamente
+    para identificar tu sesión dentro de la app.</p>
 
-    <p><strong>Datos de uso de la app</strong></p>
-    <p>
-      TaxiCalc almacena localmente en tu dispositivo los datos que ingresas o
-      que la app captura automáticamente:
-    </p>
+    <h3>Datos de uso de la app</h3>
+    <p>TaxiCalc almacena localmente en tu dispositivo:</p>
     <ul>
       <li>Tarifas, kilómetros y minutos de los viajes analizados</li>
       <li>Configuración de metas de ingreso, costos de vehículo y parámetros
           personales que tú defines</li>
       <li>Historial de viajes aceptados y rechazados</li>
     </ul>
-    <p>
-      Estos datos se guardan en la base de datos local del dispositivo (SQLite)
-      y no se transmiten a servidores externos, salvo que en el futuro
-      habilites funciones de respaldo en la nube (lo cual se indicará
-      explícitamente).
-    </p>
+    <p>Estos datos se guardan en la base de datos local del dispositivo (SQLite)
+    y <strong>no se transmiten a servidores externos</strong>.</p>
 
-    <p><strong>Captura de pantalla (MediaProjection)</strong></p>
+    <h3>Captura de pantalla (MediaProjection)</h3>
     <div class="highlight">
       TaxiCalc puede solicitar permiso para capturar la pantalla de tu
       dispositivo. Este permiso se usa <strong>exclusivamente</strong> para
       leer el texto visible en tu pantalla cuando una app de transporte
-      (Uber, DiDi, Cabify, InDrive) muestra una oferta de viaje, con el
-      fin de calcular automáticamente la rentabilidad. Las imágenes
-      capturadas se procesan localmente en tu dispositivo mediante
-      reconocimiento óptico de caracteres (OCR) y <strong>nunca se envían
-      a ningún servidor externo</strong>. No almacenamos, transmitimos ni
-      compartimos el contenido de tu pantalla.
+      muestra una oferta de viaje. Las imágenes capturadas se procesan
+      localmente mediante OCR y <strong>nunca se envían a ningún servidor
+      externo</strong>. No almacenamos ni compartimos el contenido de tu
+      pantalla.
     </div>
 
-    <p><strong>Datos de publicidad (Google AdMob)</strong></p>
-    <p>
-      La versión Basic de TaxiCalc muestra publicidad a través de
-      Google AdMob. AdMob puede recopilar datos del dispositivo para
-      mostrar anuncios relevantes, de acuerdo con la
-      <a href="https://policies.google.com/privacy" target="_blank">
-      Política de Privacidad de Google</a>. Los usuarios del plan Pro
-      no ven publicidad.
-    </p>
+    <h3>Publicidad (Google AdMob)</h3>
+    <p>La versión Basic muestra publicidad a través de Google AdMob. AdMob
+    puede recopilar datos del dispositivo para mostrar anuncios relevantes,
+    de acuerdo con la
+    <a href="https://policies.google.com/privacy" target="_blank">
+    Política de Privacidad de Google</a>. Los usuarios del plan Pro no ven
+    publicidad.</p>
+  </section>
 
-    <h2>3. Cómo usamos tu información</h2>
+  <!-- ══ PERMISOS ══ -->
+  <section id="permisos">
+    <h2>3. Permisos que solicita la app</h2>
     <ul>
-      <li>Para identificar tu sesión y asociar tu configuración personal</li>
-      <li>Para calcular la rentabilidad de cada viaje en tiempo real</li>
-      <li>Para mostrarte tu historial y resumen financiero de viajes</li>
-      <li>Para gestionar tu suscripción (plan Basic o Pro)</li>
-      <li>Para enviarte comunicaciones relacionadas con tu cuenta
-          (bienvenida, confirmación de suscripción)</li>
+      <li><strong>Captura de pantalla (MediaProjection):</strong> para analizar
+          ofertas de viaje automáticamente. Solo activo cuando el conductor lo
+          habilita manualmente.</li>
+      <li><strong>Mostrar sobre otras apps (SYSTEM_ALERT_WINDOW):</strong> para
+          mostrar el overlay de cálculo sobre las apps de transporte.</li>
+      <li><strong>Acceso a notificaciones:</strong> para detectar cuando llega
+          una oferta de viaje y activar el análisis.</li>
+      <li><strong>Internet:</strong> para autenticación con Google y publicidad.</li>
+      <li><strong>Ubicación, contactos, micrófono, cámara:</strong> no se
+          solicitan ni se usan.</li>
     </ul>
+  </section>
 
+  <!-- ══ TERCEROS ══ -->
+  <section id="terceros">
     <h2>4. Con quién compartimos tu información</h2>
-    <p>
-      No vendemos, arrendamos ni compartimos tu información personal con
-      terceros, excepto en los siguientes casos limitados:
-    </p>
+    <p>No vendemos ni compartimos tu información personal, excepto con:</p>
     <ul>
-      <li><strong>Google Firebase:</strong> autenticación de usuarios y,
-          opcionalmente en el futuro, almacenamiento en la nube</li>
+      <li><strong>Google Firebase:</strong> autenticación de usuarios</li>
       <li><strong>Google AdMob:</strong> publicidad en el plan Basic</li>
       <li><strong>Resend:</strong> envío de correos transaccionales
-          (bienvenida, confirmación de suscripción). Solo recibe tu
-          dirección de correo electrónico</li>
+          (solo tu dirección de email)</li>
       <li><strong>Google Play:</strong> gestión de suscripciones y pagos</li>
       <li><strong>Autoridades:</strong> cuando lo exija la ley aplicable</li>
     </ul>
+  </section>
 
-    <h2>5. Permisos que solicita la app</h2>
+  <!-- ══ RETENCIÓN ══ -->
+  <section id="retencion">
+    <h2>5. Retención de datos</h2>
+    <p>Los datos de historial de viajes se almacenan localmente durante 6 meses,
+    tras lo cual se eliminan automáticamente. Puedes eliminar todos tus datos
+    desinstalando la app o contactándonos para solicitar la eliminación de tu
+    cuenta de Firebase.</p>
+  </section>
+
+  <!-- ══ DERECHOS ══ -->
+  <section id="derechos">
+    <h2>6. Tus derechos</h2>
+    <p>Tienes derecho a acceder, corregir y eliminar tus datos, y a revocar
+    los permisos otorgados desde la configuración de tu dispositivo. Para
+    ejercer estos derechos, escríbenos a
+    <a href="mailto:lstredel@gmail.com">lstredel@gmail.com</a>.</p>
+  </section>
+
+  <!-- ══ MENORES ══ -->
+  <section>
+    <h2>7. Menores de edad</h2>
+    <p>TaxiCalc está dirigida exclusivamente a personas mayores de 18 años
+    que ejercen actividad económica como conductores de plataformas de
+    transporte. No recopilamos datos de menores de edad.</p>
+  </section>
+
+  <!-- ══ CAMBIOS ══ -->
+  <section>
+    <h2>8. Cambios a esta política</h2>
+    <p>Cuando actualicemos esta política, actualizaremos la fecha al inicio
+    del documento. Si los cambios son significativos, te notificaremos
+    dentro de la app.</p>
+  </section>
+
+  <!-- ══ CONTACTO ══ -->
+  <section id="contacto">
+    <h2>9. Contacto</h2>
     <ul>
-      <li><strong>Captura de pantalla (MediaProjection):</strong> para
-          analizar ofertas de viaje automáticamente. Solo activo cuando
-          el conductor lo habilita manualmente.</li>
-      <li><strong>Mostrar sobre otras apps (SYSTEM_ALERT_WINDOW):</strong>
-          para mostrar el overlay de cálculo sobre las apps de transporte.</li>
-      <li><strong>Acceso a notificaciones:</strong> para detectar cuando
-          llega una oferta de viaje y activar el análisis.</li>
-      <li><strong>Internet:</strong> para autenticación con Google y
-          publicidad.</li>
-      <li><strong>Ubicación:</strong> no se solicita ni se usa.</li>
-      <li><strong>Contactos, micrófono, cámara:</strong> no se solicitan
-          ni se usan.</li>
-    </ul>
-
-    <h2>6. Retención de datos</h2>
-    <p>
-      Los datos de historial de viajes se almacenan localmente durante
-      6 meses, tras lo cual se eliminan automáticamente del dispositivo.
-      Puedes eliminar todos tus datos en cualquier momento desinstalando
-      la app o contactándonos para solicitar la eliminación de tu cuenta
-      de Firebase.
-    </p>
-
-    <h2>7. Tus derechos</h2>
-    <p>Tienes derecho a:</p>
-    <ul>
-      <li>Acceder a los datos que tenemos sobre ti</li>
-      <li>Solicitar la corrección de datos inexactos</li>
-      <li>Solicitar la eliminación de tu cuenta y datos asociados</li>
-      <li>Revocar en cualquier momento los permisos otorgados a la app
-          desde la configuración de tu dispositivo</li>
-    </ul>
-    <p>
-      Para ejercer cualquiera de estos derechos, escríbenos a
-      <a href="mailto:asesorespymessaludables@gmail.com">asesorespymessaludables@gmail.com</a>.
-    </p>
-
-    <h2>8. Seguridad</h2>
-    <p>
-      Los datos de tu cuenta se protegen mediante los mecanismos de
-      seguridad de Google Firebase. Los datos de viajes se almacenan
-      localmente en tu dispositivo sin transmisión externa. La captura
-      de pantalla se procesa en memoria y nunca se persiste en disco
-      ni se envía a servidores externos.
-    </p>
-
-    <h2>9. Menores de edad</h2>
-    <p>
-      TaxiCalc está dirigida exclusivamente a personas mayores de 18 años
-      que ejercen actividad económica como conductores de plataformas de
-      transporte. No recopilamos intencionalmente datos de menores de edad.
-    </p>
-
-    <h2>10. Cambios a esta política</h2>
-    <p>
-      Podemos actualizar esta política ocasionalmente. Cuando lo hagamos,
-      actualizaremos la fecha al inicio de este documento. Si los cambios
-      son significativos, te notificaremos dentro de la app.
-    </p>
-
-    <h2>11. Contacto</h2>
-    <p>
-      Si tienes preguntas sobre esta política de privacidad, puedes
-      contactarnos en:
-    </p>
-    <ul>
-      <li>Email: <a href="mailto:asesorespymessaludables@gmail.com">asesorespymessaludables@gmail.com</a></li>
+      <li>Email: <a href="mailto:lstredel@gmail.com">lstredel@gmail.com</a></li>
       <li>Desarrollador: Asesores PS SpA — Santiago, Chile</li>
     </ul>
+  </section>
 
-    <footer>
-      © 2026 Asesores PS SpA · TaxiCalc · Santiago, Chile<br>
-      TaxiCalc no está afiliada con Uber, DiDi, Cabify ni InDrive.
-    </footer>
+  <footer>
+    © 2026 Asesores PS SpA · TaxiCalc · Santiago, Chile<br>
+    TaxiCalc no está afiliada con Uber, DiDi, Cabify ni InDrive.
+  </footer>
 
-  </div>
+</div>
 </body>
 </html>
+
